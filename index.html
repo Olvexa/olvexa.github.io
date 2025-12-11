@@ -28,12 +28,12 @@
         }
 
         .logo {
-            height: 45px;
+            height: 35px; /* REDUCIDO */
         }
 
         /* LINKS ESCRITORIO */
         .nav-links a {
-            margin-left: 20px;
+            margin-left: 12px; /* REDUCIDO */
             text-decoration: none;
             color: #0B4A86;
             font-weight: 600;
@@ -91,7 +91,6 @@
             .nav-links {
                 display: none;
             }
-
             .hamburger {
                 display: flex;
             }
@@ -111,156 +110,3 @@
 
         .hero p {
             font-size: 18px;
-            color: #333;
-        }
-
-        /* SECCIONES */
-        section {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h2 {
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 30px;
-            color: #0B4A86;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        /* PRODUCTOS */
-        .productos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-        }
-
-        .producto-card {
-            width: 280px;
-            padding: 20px;
-            border: 1px solid #EEE;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-            background: white;
-        }
-
-        .producto-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .producto-card h3 {
-            color: #0B4A86;
-            margin-top: 15px;
-        }
-
-        /* CONTACTO */
-        .contacto-info {
-            text-align: center;
-            font-size: 20px;
-        }
-
-        footer {
-            background: #0B4A86;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- HEADER -->
-    <header>
-        <img src="Logo Olvexa.png" alt="Olvexa Logo" class="logo">
-
-        <nav class="nav-links">
-            <a href="#quienes">Quiénes somos</a>
-            <a href="#productos">Productos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-
-    <!-- MENÚ MÓVIL -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#quienes" onclick="toggleMenu()">Quiénes somos</a>
-        <a href="#productos" onclick="toggleMenu()">Productos</a>
-        <a href="#contacto" onclick="toggleMenu()">Contacto</a>
-    </div>
-
-    <!-- HERO -->
-    <div class="hero">
-        <h1>Suplementos Premium Olvexa</h1>
-        <p>Calidad, pureza y bienestar para tu salud diaria.</p>
-    </div>
-
-    <!-- QUIÉNES SOMOS -->
-    <section id="quienes">
-        <h2>Quiénes somos</h2>
-        <p>
-            En Olvexa desarrollamos suplementos premium con ingredientes de la más alta calidad.
-            Buscamos ofrecer productos efectivos, limpios y confiables, diseñados para apoyar
-            el bienestar integral de nuestros clientes.
-        </p>
-    </section>
-
-    <!-- PRODUCTOS -->
-    <section id="productos">
-        <h2>Nuestros productos</h2>
-
-        <div class="productos">
-
-            <div class="producto-card">
-                <img src="glicinato.jpg" alt="Glicinato de Magnesio">
-                <h3>Glicinato de Magnesio</h3>
-                <p>Fórmula premium en cápsulas veganas.</p>
-            </div>
-
-            <div class="producto-card">
-                <img src="citrato.jpg" alt="Citrato de Potasio">
-                <h3>Citrato de Potasio</h3>
-                <p>Máxima pureza y absorción.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p class="contacto-info">
-            📩 contacto@olvexa.com<br>
-            📱 WhatsApp: 55 0000 0000
-        </p>
-    </section>
-
-    <footer>
-        © 2025 Olvexa — Todos los derechos reservados
-    </footer>
-
-    <!-- SCRIPT -->
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("mobileMenu");
-            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-        }
-    </script>
-
-</body>
-</html>
